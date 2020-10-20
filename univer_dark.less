@@ -1,0 +1,250 @@
+/***************************************************
+ *          COLORS
+ ***************************************************
+ }
+ */
+@dark_02: #222226;
+@dark_03: #333336;
+@dark_04: #444446;
+@dark_05: #555556;
+@dark_07: #777776;
+@dark_08: #888886;
+@dark_16: #6d6d6d;
+@white: #f1f1f1;
+@white_03: #e3e3e3;
+@gray: #6c757d;
+@urgent: #773d45;
+// TODO: цвет говно (По мнению Елизаветы)
+@blue: #568396;
+@transparent: #ffffff00;
+/***************************************************
+ *          BODY
+ ***************************************************
+ */
+body {
+  /***************************************************
+   *          GENERAL
+   ***************************************************
+   */
+  background-color: @dark_02!important;
+  color: @dark_08!important;
+  .bg-blueColour {
+    background-color: @dark_03!important;
+  }
+  a {
+    color: @white!important;
+  }
+  /***************************************************
+   *          HEADER
+   ***************************************************
+   */
+  header.main-header {
+    background-color: @dark_04!important;
+    a {
+      color: @white!important;
+    }
+    #desktopLogo, #desktopLogoMin, #mobileLogo {
+      filter: grayscale(70%);
+    }
+  }
+  /***************************************************
+   *          CARD
+   ***************************************************
+   */
+  .card {
+    background-color: @dark_03!important;
+    color: @white_03;
+    border: 0px solid #ffffff;
+    h3 {
+      color: @white_03!important;
+    }
+    .card-header,
+    .menu-vertical>ul>li h3 {
+        border-bottom: 2px solid @dark_02!important;
+        background-color: @dark_04!important;
+        color: @white!important;
+    }
+    .card-header {
+      .text-muted {
+        color: @white!important;
+      }
+    }
+    .alert {
+      border: 0;
+    }
+    .list-group-item,
+    .menu-vertical>ul>li a {
+      background-color: @transparent!important;
+    }
+    .card-body {
+      background-color: @dark_03!important;
+    }
+    .card {
+      border: 2px solid @dark_04;
+    }
+  }
+  /***************************************************
+   *          ICONS
+   ***************************************************
+   */
+  .bg-whiteColour {
+    background: @dark_03!important;
+  }
+  /***************************************************
+   *          ICONS
+   ***************************************************
+   */
+  .service-icon {
+    filter: grayscale(70%);
+  }
+  /***************************************************
+   *          BUTTONS
+   ***************************************************
+   */
+  .btn-primary,
+  .nav-pills .nav-link.active,
+  .nav-pills .show>.nav-link,
+  .alert-info {
+    background-color: @dark_16!important;
+    color: @white!important;
+    border: 0;
+  }
+  .grade-book-button, .projects-button, .projects__stages-button {
+    color: @dark_05!important;
+  }
+  .btn-secondary {
+    background-color: @dark_03!important;
+  }
+  .btn-secondary.active {
+    background-color: @dark_04!important;
+  }
+  .btn-danger, .event-close-block button {
+    background-color: @urgent!important;
+  }
+  .btn-light {
+    color: @white!important;
+    background-color: @dark_05!important;
+  }
+  /***************************************************
+   *          FORM
+   ***************************************************
+   */
+  .form-control {
+    background-color: @dark_05!important;
+    border: 1px solid @white!important;
+    color: @white!important;
+  }
+  /***************************************************
+   *          DROPDOWN
+   ***************************************************
+   */
+  .dropdown-menu {
+    background-color: @dark_05!important;
+    .selected {
+      background-color: @dark_07!important;
+    }
+  }
+  .dropdown-item:focus, .dropdown-item:hover,
+  .menu-horizontal .menu-link:focus, .menu-horizontal .menu-link:hover,
+  .shadow-dropdown {
+    background-color: @dark_03!important;
+    border: 0;
+    color: @white!important;
+    h3 {
+      color: @white!important;
+    }
+  }
+  /***************************************************
+   *          BANNERS
+   ***************************************************
+   */
+  #card-promo {
+    .img-fluid {
+      filter: grayscale(100%);
+    }
+    a.bordered_img {
+      border: 0;
+    }
+  }
+  /***************************************************
+   *          TIMETABLE
+   ***************************************************
+   */
+  .js-shedule {
+    color: @dark_08!important;
+  }
+  .fc-unthemed .fc-content, .fc-unthemed .fc-divider,
+  .fc-unthemed .fc-list-heading td, .fc-unthemed .fc-list-view,
+  .fc-unthemed .fc-popover, .fc-unthemed .fc-row, .fc-unthemed tbody,
+  .fc-unthemed td, .fc-unthemed th, .fc-unthemed thead {
+    border-color: @dark_02!important;
+  }
+  .event-block.archive {
+    border: 0;
+    .event-block__header {
+      background-color: @dark_04!important;;
+      color: @white!important;
+    }
+  }
+  .event-block {
+    border: 3px solid @gray!important;
+    background-color: @dark_05!important;
+  }
+  .event-block:hover {
+    border: 2px solid @urgent!important;
+  }
+  .event-block__header {
+    background: @gray!important;
+  }
+  .event-block__body {
+    background-color: @dark_03!important;
+  }
+  td.fc-today {
+    background: @dark_04!important;
+  }
+  .event-block__shader {
+    display: none;
+  }
+  .fc-now-indicator {
+    position: absolute;
+    border: 0 solid @urgent;
+  }
+  dd {
+    color: @white!important;
+  }
+  /***************************************************
+   *          MODAL
+   ***************************************************
+   */
+  .modal-content {
+    background-color: @dark_03!important;
+    .modal-header {
+      background-color: @dark_04!important;
+      border-bottom: 2px solid @dark_02!important;
+      .modal-title {
+        color: @white!important;
+      }
+    }
+    .modal-footer {
+      border-top: 2px solid @dark_02!important;
+    }
+  }
+  /***************************************************
+   *          FOOTER
+   ***************************************************
+   */
+  .footer.main-footer {
+    color: @dark_07!important;
+    background-color: @dark_03!important;
+  }
+  /***************************************************
+   *          OTHER
+   ***************************************************
+   */
+  dl dt { /* зачем они используют эту хуйню - загадка */
+    color: @dark_05!important;
+  }
+  .border-bottom {
+    border-bottom: 1px solid @dark_02!important;
+  }
+}
